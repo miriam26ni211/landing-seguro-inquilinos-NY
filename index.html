@@ -1,74 +1,109 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Seguro para Inquilinos</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-      background-color: #f8f8f8;
-    }
-    form {
-      max-width: 400px;
-      margin: auto;
-      padding: 20px;
-      background: #ffffff;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    label, input {
-      display: block;
-      width: 100%;
-      margin-top: 10px;
-    }
-    input {
-      padding: 8px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    button {
-      margin-top: 15px;
-      padding: 10px;
-      background-color: #0c8346;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      font-size: 16px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguro de Inquilinos - Nueva York</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #0066cc;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 8px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        ul li::before {
+            content: "✅";
+            position: absolute;
+            left: 0;
+            color: green;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, button {
+            margin-top: 10px;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .whatsapp {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .whatsapp a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #25D366;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <h1>¿Tu landlord te pidió un seguro de inquilinos?</h1>
+        <p>¡Cómpralo tú misma y en menos de 5 minutos!</p>
+        <ul>
+            <li>SIN revisión de crédito</li>
+            <li>Protege tus pertenencias</li>
+            <li>Certificado al instante</li>
+            <li>Aceptado en Nueva York</li>
+            <li>Desde precios súper accesibles</li>
+        </ul>
 
-  <h1 style="text-align: center;">¿Tu landlord te pidió un seguro de inquilinos?</h1>
-  <p style="text-align: center;">¡Déjanos tu información y te guiamos!</p>
+        <h2>¿Qué incluye?</h2>
+        <ul>
+            <li>Cobertura para muebles, ropa y electrodomésticos</li>
+            <li>Protección en caso de incendios, robos o fugas de agua</li>
+            <li>Responsabilidad civil (daños en el apartamento o a terceros)</li>
+            <li>Opciones adicionales: mascotas, robo de identidad y más</li>
+        </ul>
 
-  <form action="https://formsubmit.co/b1a5dc3bc19d74e8b5fa45d0f3e4937c" method="POST">
-    <!-- Redirección después de enviar -->
-    <input type="hidden" name="_next" value="https://miriam26ni211.github.io/landing-seguro-inquilinos-NY/gracias.html">
-    <input type="hidden" name="_captcha" value="false">
+        <form action="https://formsubmit.co/b1a5dc3bc19d74e8b5fa45d0f3e4937c" method="POST">
+            <input type="text" name="nombre" placeholder="Nombre completo" required>
+            <input type="email" name="email" placeholder="Correo electrónico" required>
+            <input type="tel" name="telefono" placeholder="Teléfono" required>
+            <input type="hidden" name="_next" value="https://www.epremiuminsurance.com/DirectToConsumerPartner.aspx?IRISAccountID=pRTWnLx4fu0%3d&TopLevelIRISAccountID=DKkpwg9hFl8%3d">
+            <input type="hidden" name="_captcha" value="false">
+            <button type="submit">Continuar a comprar el seguro</button>
+        </form>
 
-    <label for="name">Nombre:</label>
-    <input type="text" id="name" name="name" required>
-
-    <label for="email">Correo electrónico:</label>
-    <input type="email" id="email" name="email" required>
-
-    <label for="phone">Teléfono (opcional):</label>
-    <input type="tel" id="phone" name="phone">
-
-    <button type="submit">Enviar y continuar</button>
-  </form>
-
+        <div class="whatsapp">
+            <a href="https://wa.me/13479256825" target="_blank">Chatea por WhatsApp</a>
+        </div>
+    </div>
 </body>
 </html>
-
-     
-
-
-
-   
-
-
-
