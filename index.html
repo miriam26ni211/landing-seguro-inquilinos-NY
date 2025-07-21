@@ -1,8 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <title>Seguro de Inquilinos Rápido</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -25,6 +26,8 @@
       display: inline-block;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 400px;
+      width: 100%;
     }
     input, button {
       width: 100%;
@@ -32,6 +35,7 @@
       margin: 8px 0;
       border-radius: 5px;
       border: 1px solid #ccc;
+      box-sizing: border-box;
     }
     button {
       background-color: #004080;
@@ -57,10 +61,8 @@
 </head>
 <body>
 
-
   <h1>¿Tu landlord te pidió un seguro de inquilinos?</h1>
   <p>¡Consíguelo tú misma en menos de 5 minutos!</p>
-
 
   <div class="benefits">
     <ul>
@@ -72,32 +74,30 @@
     </ul>
   </div>
 
-
-  <form action="b1a5dc3bc19d74e8b5fa45d0f3e4937c" method="POST">
+  <form action="https://formsubmit.co/b1a5dc3bc19d74e8b5fa45d0f3e4937c" method="POST">
     <input type="text" name="nombre" placeholder="Nombre completo" required>
     <input type="email" name="email" placeholder="Correo electrónico" required>
     <input type="tel" name="telefono" placeholder="Teléfono" required>
 
-
-    <!-- Redirección automática -->
+    <!-- Redirección automática después del envío -->
     <input type="hidden" name="_next" value="https://www.epremiuminsurance.com/DirectToConsumerPartner.aspx?IRISAccountID=pRTWnLx4fu0%3d&TopLevelIRISAccountID=DKkpwg9h">
-    
-    <!-- Opcional: evitar spam -->
-    <input type="hidden" name="_captcha" value="false">
 
+    <!-- Evitar CAPTCHA de FormSubmit -->
+    <input type="hidden" name="_captcha" value="false">
 
     <button type="submit">Continuar a comprar el seguro</button>
   </form>
 
-
   <br>
-
 
   <!-- Botón WhatsApp -->
   <a class="whatsapp-button" href="https://wa.me/13479256825?text=Hola%2C+tengo+preguntas+sobre+el+seguro+de+inquilino" target="_blank">
     💬 Haz tus preguntas por WhatsApp
   </a>
 
-
 </body>
 </html>
+
+
+
+
